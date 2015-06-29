@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+<meta http-equiv="Content-Type" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, text/html; charset=UTF-8" />
+
+
+
+	
+  	<!-- EXTRASOURCES -->
+	<!-- Loads the Javascript code...-->
+  	<script src="src/Runtime.js"></script>
+  	
+
+</head>
+<body>
+    
+		    
+			    <canvas id="MMFCanvas" width="25" height="455">
+				    <p>Your browser does not support Canvas.</p>
+			    </canvas>
+		    
+	 
+    <script>
+        // RUNTIMESTART
+        // This is where the HTML5 runtime is actually started
+	    window.addEventListener("load", windowLoaded, false);
+	    function windowLoaded()
+	    {
+		    // Calls the runtime
+		    // First parameter : name of the canvas element
+		    // Second parameter : path to the cch file. Images and sounds must lay beside this file
+		    new Runtime("MMFCanvas", "resources/SideBar.cch");
+	    }
+        // RUNTIMESTARTEND
+    </script>
+    
+</body>
+</html>
